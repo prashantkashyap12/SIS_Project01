@@ -1,0 +1,85 @@
+<!-- top header -->
+<div class="container-fluid">
+    <div class="row px-5">
+        <div class="col-md-9 text-left" [ngClass]="'top-header'">
+            <a href="mailto:sisinsndt@yahoo.com" title="Mail to admin">sisinsndt@yahoo.com,</a>
+            <a href="mailto: certificationsis@gmail.com" title="Mail to official">certificationsis@gmail.com,</a>&nbsp;&nbsp;
+            <a href="tel:09282106896" title="Admin">+91 9282106896,</a>
+            <a href="tel:09710399300" title="Admin">+91 9710399300,</a>
+
+            <a href="tel:09444298642" title="Support">+91 9444298642,</a>
+            <a href="tel:09282106896" title="Support">+91 9282106896,</a>
+            <a href="tel:04424717182" title="Support">044-24717182</a>
+        </div>
+        <div class="col-md-3 text-end" [ngClass]="'top-header signup'">
+            <a href="#">Master User</a>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light px-5" [ngClass]="'myclass'">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../../../assets/mainlogo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" aria-current="page" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+            <ul class="dropdown-menu">
+                <li class="nav-item"><a  routerLink="Aboutus" class="dropdown-item">About Us</a></li>
+                <li class="nav-item"><a href="#" class="dropdown-item">Legal</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link  dropdown-toggle" aria-current="page" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Course</a>
+            <ul class="dropdown-menu">
+                <li class="nav-item"><a href="#" class="dropdown-item">ASNT NDT- II COURSES</a></li>
+                <li class="nav-item"><a href="#" class="dropdown-item">ADVANCED NDT</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-item dropdown-toggle">WELDING INSPECTOR</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a href="#" class="dropdown-item">CSWIP 3.1</a></li>
+                        <li class="nav-item"><a href="#" class="dropdown-item">CSWIP 3.2</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a href="#" class="dropdown-item dropdown-toggle">PAINTING INSPECTOR</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a href="#" class="dropdown-item">BGAS Gr-2</a></li>
+                    </ul>
+                </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              service
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li class="nav-item"><a class="dropdown-item" href="#">CONVENTIONAL NDT</a></li>
+              <li class="nav-item"><a class="dropdown-item" href="#">ADVANCED NDT</a></li>
+              <li class="nav-item"><a class="dropdown-item" href="#">EQUIPMENT SUPPLY</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Placement</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Contact
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="nav-item"><a href="#" class="dropdown-item">Contact us</a></li>
+                <li class="nav-item"><a href="#" class="dropdown-item">Result</a></li>
+                <li class="nav-item"><a href="#" class="dropdown-item">Live Noties <span class="badge" [ngStyle]="{'background-color':'#33415B'}">{{UpdateNote}}</span></a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button class="btn btn-danger" >Login / Signup</button>
+        </form>
+      </div>
+    </div>
+  </nav>

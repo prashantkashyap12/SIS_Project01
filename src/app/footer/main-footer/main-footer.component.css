@@ -1,0 +1,45 @@
+.social-img{
+    padding: 0px;
+    margin: 10px;
+    list-style: none;
+}
+.social-img li a{
+    float: left;
+    padding: 10px;
+    background-color: rgb(240, 255, 255, 0.3); 
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    margin: 0px 3px;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+.social-img li a:hover{
+    background-color: rgba(255, 83, 83, 0.941);
+    color: rgb(200, 200, 200);
+}
+.footerlink{
+    padding: 3px;
+    list-style: none;
+    color: #9ea9c0;
+
+}
+.footerlink a{
+
+    font-size: 16px;;
+    padding: 3px 0px;
+}
+.footerlink a:hover{
+    color:  rgba(255, 83, 83, 0.941);
+}
+.footer-border{
+    background-color:#A0A0A0;
+    height:5px;
+    width:80%;
+    margin-top: 10px;
+}
+.footer-contact p{
+    color: #9ea9c0;
+}
+.footer-contact a{
+    color: #9ea9c0;
+}

@@ -1,0 +1,24 @@
+.default-heading01 {
+    color: #33415B;
+    text-transform:uppercase;
+
+}
+.default-heading01 span{
+    color:#dc3545;
+    font-weight:700; 
+}
+.default-heading02 {
+    color: #eeeeee;
+    text-transform:uppercase;
+
+}
+.default-heading02 span{
+    color:#e37d4b;
+    font-weight:700; 
+}
+.default-pera01 {
+    box-sizing: content-box;
+    font-size: 15px;
+    color: #4b5363
+}
+

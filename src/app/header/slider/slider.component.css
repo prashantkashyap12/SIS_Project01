@@ -1,0 +1,29 @@
+.carousel-item{
+    height: 70vh;
+    min-width: 360px;
+    background-size: cover;
+}
+.carousel-item::before{
+    content: '';
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-item img{
+    height: 70vh;
+}
+.carousel-caption{
+    position: absolute;
+    bottom: 200px;
+}
+.carousel-caption h5{
+    font-size: 44px;
+    font-weight: 600;
+}
+.carousel-caption h5 > span{
+    color: brown;
+}

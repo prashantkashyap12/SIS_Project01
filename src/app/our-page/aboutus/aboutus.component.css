@@ -1,0 +1,45 @@
+.default-heading01 {
+    color: #33415B;
+    text-transform:uppercase;
+
+}
+.default-heading01 span{
+    color:#dc3545;
+    font-weight:700; 
+}
+.default-pera01 {
+    box-sizing: content-box;
+    font-size: 15px;
+    color: #4b5363
+}
+
+.team{
+    transition: 0.5s ease-in-out;
+    border: 1px solid #c9e5ff; 
+    box-shadow: 0px 10px 15px -3px rgb(59,89,152,0.4);
+}
+.team::before{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #33415B;
+}
+.team:hover{
+    border: 1px solid #ffc9ce; 
+    box-shadow: 0px 10px 15px -3px rgb(220,53,69,0.4);
+
+}
+.team:hover h5{
+    transition: 0.5s ease;
+    color: #dc3545;
+}
+.team img{
+    transition: 0.4s ease-in-out;
+    transform: perspective(400px) rotateY(0deg);
+}
+.team:hover img{
+    transition: 0.2s ease-in-out;
+    transform: perspective(400px) rotateY(180deg);
+}
