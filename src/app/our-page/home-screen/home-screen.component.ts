@@ -11,5 +11,29 @@ export class HomeScreenComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  data = [
+    {
+      title:'Practice Problems',
+    },
+    {
+      title:'Challenges & Hackathons',
+    },
+    {
+      title:'Skill Tests',
+    },
+    { 
+      title:'Webinars',
+    },
+    {
+      title:'Tech News',
+    },
+    {
+      title:'Skill-based Communities',
+    },
+    {
+      title:'Company Communities',
+    } 
+  ]
 
 }

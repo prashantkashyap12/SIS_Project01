@@ -45,7 +45,6 @@ import { HomeScreenComponent } from './home-screen/home-screen.component';
   exports:[
     AboutusComponent,
     LegalComponent,
-    
     AdvanceNdtComponent,
     AsntComponent,
     CswipOneComponent,

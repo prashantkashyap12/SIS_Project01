@@ -1,24 +1,20 @@
-.default-heading01 {
-    color: #33415B;
-    text-transform:uppercase;
+.contact01{
+    padding: 10px;
+    background-color: #F2F2F2;    
+    transition: 0.5s ease;
+    box-shadow: 0px 3px 5px -3px rgb(59,89,152,0.4);
+    border-left: 4px solid #f58a94;
+}
+.contact01:hover{
+    box-shadow: 0px 5px 15px -3px rgb(59,89,152,0.4);
+}
+.contact01 > a{
+    text-decoration: none;
+    padding: 10px;
+    color: #4b5363;
+}
+.contact01 > span {
+    padding:10px;
+    color: #4b5363;
 
 }
-.default-heading01 span{
-    color:#dc3545;
-    font-weight:700; 
-}
-.default-heading02 {
-    color: #eeeeee;
-    text-transform:uppercase;
-
-}
-.default-heading02 span{
-    color:#e37d4b;
-    font-weight:700; 
-}
-.default-pera01 {
-    box-sizing: content-box;
-    font-size: 15px;
-    color: #4b5363
-}
-

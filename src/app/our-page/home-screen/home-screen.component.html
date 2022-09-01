@@ -1,2 +1,28 @@
-<p>Apply slider</p>
 
+
+
+<section [ngClass]="'common-section01'">
+<div class="container">
+    <div class="row p-4" >
+        <h4 [ngClass]="'default-heading01 text-center'">What We<span> Offer</span></h4>
+        <div class="col-md-3 p-4" *ngFor="let item of data">
+            <div class="offer">
+                <h6 [ngClass]="'default-heading01 p-5 text-center'">{{item.title}}</h6>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<section [ngClass]="'review-section'">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+
+
+
+          </div>
+      </div>
+  </div>
+</section>

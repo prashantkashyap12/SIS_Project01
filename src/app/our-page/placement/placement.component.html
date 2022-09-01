@@ -1,1 +1,48 @@
-<p>placement works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="placestudent-list p-3">
+                <table class="table table-striped table-hover table-bordered" >
+                    <thead [ngStyle]="{'background-color':'#33415B','color':'#ffff'}">    
+                        <tr>
+                            <th>Sr. No.</th>
+                            <th>Univ. Roll No.</th>
+                            <th>Name</th>
+                            <th>Father’s Name</th>
+                            <th>Branch</th>
+                            <th>Company Name</th>
+                            <th>Package (LPA)</th>
+                        </tr>
+                    </thead>
+                    <tbody *ngFor="let data of students">
+                        <tr>
+                            <td>{{data.name}}</td>
+                            <td>{{data.Roll_Number}}</td>
+                            <td>{{data.name}}</td>
+                            <td>{{data.Father}}</td>
+                            <td>{{data.Branch}}</td>
+                            <td>{{data.company_Name}}</td>
+                            <td>{{data.package}}</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="mx-auto px-5">
+    <ul class="pagination color-danger">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item ">
+        <a class="page-link active" [ngStyle]="{'background':'#33415B', 'color':'#fffff'}" href="#">2 <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>

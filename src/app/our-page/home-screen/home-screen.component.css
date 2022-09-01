@@ -1,0 +1,19 @@
+.offer{
+    height: 200px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
+}
+.review-section{
+    background-image: url('https://image3.jdomni.in/banner/07042018/10/E0/2C/6D49CFDE10F0027CDF5AF24510_1523098355001.jpg?output-format=webp');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.carousel-inner{
+    height: 40vh;
+}
+carousel-caption{
+    color: #ffffff;
+}

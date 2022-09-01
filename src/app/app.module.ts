@@ -23,13 +23,13 @@ import { OurPageModule } from './our-page/our-page.module';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-
     HeaderModule,
     FooterModule,
     OurPageModule
   ],
 
   providers: [
+    
 
   ],
   
