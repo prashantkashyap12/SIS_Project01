@@ -46,7 +46,7 @@ export class HomeScreenComponent implements OnInit {
   
   dataUrl:any= './Contact'
   whatweare ={
-    "whatWeimg":"../../../assets/our-service/we-offer-company-icon.png";
+    "whatWeimg":"../../../assets/whatweare.png",
   }
 
 
