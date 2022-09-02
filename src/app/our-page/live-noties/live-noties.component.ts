@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonHeaderService } from 'src/app/service/common-header.service';
 
 @Component({
   selector: 'app-live-noties',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LiveNotiesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private serviceinstans:CommonHeaderService) { }
 
   ngOnInit(): void {
+  }
+  testAlert(){
+    this.serviceinstans.alertData();
   }
 
 }

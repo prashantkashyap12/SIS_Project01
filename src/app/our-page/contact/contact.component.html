@@ -4,24 +4,25 @@
         <div class="col-md-6 p-3"> 
             <div class="contact01">
                 <h6 class="default-heading02"><span>Our Address -</span></h6>
-                <p [ngClass]="'default-pera01'">Old No 36/1, New No 18/1,Behind KFC,12th Avenue, <br>Ashok Nagar, Chennai, Tamil Nadu 600083</p>
+                <p [ngClass]="'default-pera01'">{{address}}</p>
             </div>
         </div>
         <div class="col-md-6 p-3">
-            <div class="contact01">
-                <h6 class="default-heading02"><span>General Queries -</span></h6>
-                <a href="mailto:sisinsndt@yahoo.com" title="Mail to admin">sisinsndt@yahoo.com</a>
-                <a href="mailto:certificationsis@gmail.com">certificationsis@gmail.com</a><br>
-                <a href="mailto:sisinspectionservice@gmail.com">sisinspectionservice@gmail.com</a>
+            <div class="contact01" >
+                <h6 class="default-heading02" ><span>General Queries -</span></h6>
+                <ul [ngClass]="'mailBox'" *ngFor="let data of mailEmail">
+                    <li><a href="mailto:{{data.email}}" title="Mail to admin">{{data.email}}</a></li>                    
+                </ul>
             </div>
         </div>
         <div class="col-md-6 p-3 ">
-            <div class="contact01" [ngStyle]="{'padding':'15px'}">
+            <div class="contact01" >
                 <h6 class="default-heading02"><span>Call Us -</span></h6>
-                <a href="tel:+919282106896">+91-9282106896,</a>
-                <a href="tel:+919444298642">+91-9444298642,</a>
-                <a href="tel:+919710399300">+91-9710399300,</a><br>
-                <a href="tel:044-24717182">044-24717182</a>
+                
+
+                <ul [ngClass]="'mailBox'" *ngFor="let data of contactNum">
+                    <li><a href="tel:{{data.contact}}" title="Mail to admin">+91-{{data.contact}}</a></li>
+                </ul>
             </div>
         </div>
 

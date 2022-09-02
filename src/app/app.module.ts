@@ -7,6 +7,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 import { HeaderModule } from './header/header.module';
 import { FooterModule } from './footer/footer.module';
 import { OurPageModule } from './our-page/our-page.module';
+import { CommonHeaderService } from './service/common-header.service';
+
 
 
 
@@ -29,7 +31,7 @@ import { OurPageModule } from './our-page/our-page.module';
   ],
 
   providers: [
-    
+    CommonHeaderService
 
   ],
   

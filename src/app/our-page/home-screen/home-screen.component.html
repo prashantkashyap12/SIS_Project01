@@ -1,3 +1,26 @@
+<div class="container">
+    <div class="row p-5">
+        <div class="col-md-6">
+            <h4 class="default-heading01 py-2">Why <span>Choose Us -</span></h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis nobis error provident libero rerum veniam quis repellendus magni quia iure harum asperiores necessitatibus voluptatum aliquid optio, pariatur nihil minus soluta.</p>
+            <ul class="list-unstyled px-4" >
+                <li>Expertise in training for 50000 candidates</li>
+                <li>Expertise in global placements</li>
+                <li>Expertise in global placements</li>
+                <li>Expertise and qualified faculty</li>
+                <li>Expertise in using international accredited equipment & samples</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <img src="..//..//..//assets/whatweare.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+
+
 
 
 
@@ -7,6 +30,7 @@
         <h4 [ngClass]="'default-heading01 text-center'">What We<span> Offer</span></h4>
         <div class="col-md-3 p-4" *ngFor="let item of data">
             <div class="offer">
+                <img src={{item.ImagePath}}>
                 <h6 [ngClass]="'default-heading01 p-5 text-center'">{{item.title}}</h6>
             </div>
         </div>
@@ -17,12 +41,46 @@
 
 <section [ngClass]="'review-section'">
   <div class="container">
-      <div class="row">
-          <div class="col-md-12">
-
-
-
+      <div class="row p-5">
+        <h4 class="default-heading01">Popular Problems to <span>Solve -</span></h4>
+        <div class="col-md-4 ">
+            <div class="row p-4 m-1  rounded section1-ui">
+                <div class="col-md-12">
+                    <div class="news bg-white my-1 p-3" *ngFor="let news of newsdata">
+                        <h6 class="default-heading01"> {{news.mainheading}}</h6>
+                        <span>{{news.pera}}</span>
+                        <a [href]="dataUrl">Solve Problem</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row p-1 m-1 rounded section1-ui ">
+                <div class="col-md-12">
+                    <h5 class="default-heading01">30 Days <span>Coding Challenge</span></h5>
+                    <p class="default-pera01 p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ullam accusantium modi numquam? Nam, eius quis cumque amet explicabo quisquam quasi, </p>
+                    <a href="#" class="btn btn-danger">Start Now</a><br>
+                    <img src="../../../assets/testonline.png"   class="img-fluid w-50" alt="">
+                </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row p-1 m-1 rounded section1-ui ">
+                <div class="col-md-12">
+                    <h5 class="default-heading01">Popular Learning <span> Path</span></h5>
+                    <a *ngFor="let course of classroom" class="section1-u1-learning ">
+                        {{course.name}}
+                    </a>
+                </div>
+                <div class="col-md-12 py-4">
+                    <h4 class="default-heading01">Interview <span>Preparation</span></h4>
+                    <p class="default-pera01">A collection of MCQs & coding problems posted by top recruiters on TechGig, now available for you to solve.</p>
+                    <a href="#" class="btn btn-danger">Sign up</a><br>
+                </div>
+            </div>
           </div>
       </div>
+      
+    
   </div>
 </section>

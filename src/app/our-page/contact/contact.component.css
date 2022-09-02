@@ -16,5 +16,14 @@
 .contact01 > span {
     padding:10px;
     color: #4b5363;
-
+}
+.mailBox{
+    list-style: none;
+}
+.mailBox li{
+    line-height: 10px;
+}
+.mailBox a{
+    color: #4b5363;
+    text-decoration: none;
 }
